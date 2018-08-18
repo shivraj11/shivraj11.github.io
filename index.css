@@ -1,0 +1,176 @@
+ :root { 
+  font-size: 16px; }
+
+ body {
+  margin: 0;
+  padding: 0; 
+ }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    }
+
+ .buttonhead{
+  display: flex;
+  justify-content: flex-end;
+}
+
+ button {
+    background: #800080;
+    border: none;
+    border-radius: 5px;
+    color:#daa520 ;
+    font-family: "Istok Web", sans-serif;
+    font-size: .8rem;
+    text-decoration: underline;
+    letter-spacing: .5px;
+    margin: 10px 20px 0 0;
+    padding: 0 70px 0 10px;
+    height: 30px;
+    width: 30px;
+    text-transform: uppercase;
+    transition: box-shadow 0.3s linear 0.1s;
+}
+
+ button:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 20px 0 #000000;
+    background-color: #228b22;
+}
+
+ .subcontainer {
+    display: flex;
+  flex-direction: row-reverse;
+  width : 100%;
+}
+
+  .banner  {
+     background-color: #800080;
+    width:76%;
+  }
+
+  .heading {
+    color: #daa520;
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    font-weight: 600; 
+    padding: 0 1vw 0 1vw ; 
+  }
+
+     .subheading{
+    color: #daa520;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: 500; 
+    margin: 1vw ;
+  }
+
+   .discription{
+    color: #800080;
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    font-weight: 400; 
+    padding: 0 1vw 0 1vw; 
+  }
+
+    #plus{
+    color: #daa520;
+  }
+
+     .bannertwo {
+     background-color:  #800080;
+     background-image: url(shiva1.jpg);
+     background-repeat: no-repeat;
+     background-position:  center;
+     background-size: cover;
+    border: 1px solid #2c2c2c;
+    border-radius: 100px;
+    padding: 1vw 1vw 0 0;
+    height:280px;
+    width :20%;
+    margin: 2vw 1vw 0 1vw ;
+  }
+
+    .bannerthree {  
+    background: #daa520;
+    margin:  .4vw 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+}
+
+ .purple{
+font-color: #800080;
+  }
+
+.icon-group {
+    margin-top: 2vh;
+}
+
+.icon {
+      margin: 0 0 0 10px ;
+    width: 25px;
+}
+
+ .icontwo {
+     margin: 1vw 2vw 1vw 1vw;
+     height: 55px;
+    width: 70px;
+}
+
+  .secondsubcontainer {
+  background-color:  #daa520;
+    display: flex;
+  width : 100%;
+  margin:  .4vw 0 0 0  ;
+}
+
+ .exlogobanner{
+ background-color:  #daa520;
+     background-image: url(birchstreet.png);
+     background-repeat: no-repeat;
+     background-position:  top;
+     background-size: 200px; 
+    width: 700px;
+    height: 75px ;
+    margin: .5vw 1vw 0 0 ;
+}
+
+
+@media only screen and (max-width: 380px) {
+.buttonhead{
+  flex-direction:  column;
+margin: 1vh 1vw 1vh 3vw;  
+}}
+
+@media only screen and (max-width: 850px) {
+    .subcontainer {
+        flex-direction: column;
+align-items:  center;
+    }
+     .banner {
+    width: 100vw;
+    }
+    .bannertwo{
+order: -1;
+ width: 250px;
+    }}
+
+@media only screen and (max-width: 1080px) {
+   .secondsubcontainer{
+  flex-direction: column;
+  align-items: left;
+  }
+
+    .bannerthree {
+    width: 100vw;
+    }
+
+    .exlogobanner {
+      background-size: 200px;
+      background-position: center;
+order: -1;
+margin-left: 1vw;
+    width: 200px;
+    height: 75px 
+    }}
