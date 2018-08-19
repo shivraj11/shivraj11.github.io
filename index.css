@@ -126,12 +126,12 @@ font-color: #800080;
 }
 
  .exlogobanner{
- background-color:  #daa520;
+ background-coor:  #daa520;
      background-image: url(birchstreet.png);
      background-repeat: no-repeat;
      background-position:  top;
-     background-size: 200px; 
-    width: 700px;
+     background-size: auto; 
+    width: 60vw;
     height: 75px ;
     margin: .5vw 1vw 0 0 ;
 }
@@ -155,8 +155,20 @@ align-items:  center;
 order: -1;
  width: 250px;
     }}
+    @media only screen and (max-width: 260px) {
+    .subcontainer {
+        flex-direction: column;
+align-items:  center;
+    }
+     .banner {
+    width: 100vw;
+    }
+    .bannertwo{
+order: -1;
+ width: 95%;
+    }}
 
-@media only screen and (max-width: 1080px) {
+@media screen and (min-width: 210px) and  (max-width: 1070px) {
    .secondsubcontainer{
   flex-direction: column;
   align-items: left;
@@ -172,5 +184,33 @@ order: -1;
 order: -1;
 margin-left: 1vw;
     width: 200px;
-    height: 75px 
+    height: 75px ;
+    }}
+    @media only screen and (max-width: 210px) {
+   .secondsubcontainer{
+  flex-direction: column;
+  align-items: left;
+  }
+
+    .bannerthree {
+    width: 100vw;
+    }
+
+    .exlogobanner {
+      background-size: 100%;
+      background-position: center;
+order: -1;
+margin-left: 1vw;
+    width: 100%;
+    height: 75px; 
+    }}
+
+      @media only screen and (max-width: 150px) {
+   .heading{
+   font-size: 23px;
+    }
+ button {
+    letter-spacing: .5px;
+    margin: 5px;
+    padding: 5px;
     }}
